@@ -1,0 +1,233 @@
+.header {
+    margin: 0 auto;
+    background-color: #EBAE2B;
+    width:100%;
+    padding: 8px;
+    box-sizing: border-box;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family:'Bebas Neue', sans-serif;
+    justify-content: space-evenly;
+}
+
+.sections {
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 4px;
+    color:black;
+}
+
+.sections__creditos {
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 4px;
+    color:grey;
+}
+
+.sections:hover {
+    opacity: 50%;
+  }
+
+.sections:hover {
+    opacity: 50%;
+  }
+
+.body_element {
+    margin: 0;
+    background-color: black;
+    min-height: 100vh;
+}
+
+@keyframes animacao {
+    0% {
+      background-color: whitesmoke;
+    }
+  
+    50% {
+        background-color: rgb(129, 113, 22);
+      }
+
+    100% {
+      background-color: grey;
+    }
+  }
+
+.headerlink {
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+.headerlink:hover {
+    opacity: 50%;
+  }
+  
+.main {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 15px auto;
+    box-sizing: border-box;
+  }
+
+  .perfil {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil__foto {
+    margin: 40px 0;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10%;
+    animation: animacao 1s infinite;
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 20 auto;
+}
+
+.perfil__nome {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 400;
+    margin: 16px 0;
+    color: white;
+    font-family:'Bebas Neue', sans-serif;
+}
+
+.perfil__descricao {
+    font-size: 25px;
+    text-indent: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.pagina2__titulo {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 400;
+    margin: 16px 0;
+    color: black;
+    font-family:'Bebas Neue', sans-serif;
+}
+
+.projetos {
+    background-color:#f0e269;
+    padding: 8px;
+    margin: 16px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.projetos__titulo {
+    font-family:'Bebas Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 16px 0;
+}
+
+.projetos__descricao {
+    font-size: 17px;
+    text-indent: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 8px 0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.pagina3__titulo {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 400;
+    margin: 16px 0;
+    color: white;
+    font-family:'Bebas Neue', sans-serif;
+}
+
+.carrossel {
+    overflow: hidden;
+    width: 500px;
+    margin: 0 auto;
+} 
+
+.container {
+    display:flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.imagens{
+    object-fit: cover;
+    height: fit-content;
+    width: 500px;
+}
+
+.creditos {
+    font-size: 14px;
+    text-indent: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 8px 0;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.creditos_pag2 {
+    font-size: 14px;
+    text-indent: 20px;
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.footer {
+    width: 100%;
+    height: 42px;
+    background-color: #EBAE2B;
+    display: flex;
+    text-align: flex;
+    align-items: center;
+    justify-content: center;
+    /*animation: animacao 1s infinite;*/
+    will-change: top, bottom;
+    box-sizing: border-box;
+  }
+
+  .footer_images{
+    position: static;
+    bottom: 0;
+  }
+
+.footer__texto {
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+@keyframes pulsar {
+    0% {
+        transform:scale(.8);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.icone--texto {
+    margin: 0 8px;
+    animation: pulsar 1s infinite alternate;
+}
+
+@media only screen and (orientation: portrait) {
+    .imagens, .carrossel{
+        width: 100vw;
+        height: fit-content;
+    }
+}
